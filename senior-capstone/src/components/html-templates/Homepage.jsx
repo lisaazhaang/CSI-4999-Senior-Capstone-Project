@@ -5,22 +5,7 @@ export default class Homepage extends Component {
     return (
 <div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-  <nav className="navbar is-light" role="navigation" aria-label="main navigation">
-    <div id="navbarBasicExample" className="navbar-menu">
-      <div className="navbar-start">
-        <a className="navbar-item">Home</a>
-        <a className="navbar-item">Request Resources</a>
-        <a className="navbar-item">Suggested Donors</a>
-      </div>
-      <div className="navbar-end">
-        <div className="navbar-item">
-          <div className="button">
-            <strong>Profile</strong>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+  
   <section className="hero is-medium is-link">
     <div className="hero-body">
       <div className="columns">

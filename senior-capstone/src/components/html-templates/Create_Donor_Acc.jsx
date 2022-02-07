@@ -6,17 +6,6 @@ export default class Create_Donor_Acc extends Component {
 
 <div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-  <style dangerouslySetInnerHTML={{__html: "\n    .center {\n      text-align: center;\n    }\n  " }} />
-  <section className="hero is-link">
-    <div className="hero-body">
-      <p className="title">
-        *Project Title
-      </p>
-      <p className="subtitle">
-        Project Catchphrase
-      </p>
-    </div>
-  </section>
   <div className="columns">
     <div className="column is-half is-offset-1">
       <div className="field is-horizontal">
