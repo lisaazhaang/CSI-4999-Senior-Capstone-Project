@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+
+import Navbar from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Navbar.jsx'
+import Footer from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Footer.jsx'
+import Homepage from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Homepage.jsx'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+         	<Homepage></Homepage>
+			
+					
   );
 }
 
 export default App;
+
