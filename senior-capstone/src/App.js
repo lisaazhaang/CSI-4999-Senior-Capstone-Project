@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Navbar.jsx'
 import Footer from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Footer.jsx'
 import Homepage from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Homepage.jsx'
@@ -17,9 +18,22 @@ import View_Donors from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senio
 
 function App() {
   return (
+    <Router>
+      <Navbar />
+      <Header />
+        <Routes>
+          <Route exact path='/' element={<Homepage/>}  />
+          <Route exact path='/charity_request' element={<Charity_Request/>}  />
+          <Route exact path='/view_donors' element={<View_Donors/>}  />
+          <Route exact path='/charity_search' element={<Charity_Search/>}  />
+          <Route exact path='/create_donor_acc' element={<Create_Donor_Acc/>}  />
+          <Route exact path='/create_charity_acc' element={<Create_Charity_Acc/>}  />
+          <Route exact path='/error' element={<Error/>}  />
+          <Route exact path='/login' element={<Login/>}  />
+        </Routes>
+        <Footer />
+    </Router>
     
-         	
-			<Homepage></Homepage>
 					
   );
 }

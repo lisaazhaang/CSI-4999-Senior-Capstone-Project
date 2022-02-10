@@ -5,16 +5,11 @@ export default class Login extends Component {
     return (
 
 /* PLACEHOLDER FOR NOW*/
-<section className="hero is-link">
-<div className="hero-body">
-  <p className="title">
-    *Project Title
-  </p>
-  <p className="subtitle">
-    Project Catchphrase
-  </p>
+<div>
+<p>hi</p>
+
+
 </div>
-</section>
-      );
+    );
 }
 }
