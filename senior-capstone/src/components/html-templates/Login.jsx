@@ -41,8 +41,7 @@ export default class Login extends Component {
       </form>
       <div className="field is-horizontal"> {/* for spacing */}
       </div>
-      <div className="field is-horizontal"> {/* for spacing */}
-      </div>
+      <div className="field is-horizontal"> {/* for spacing */}</div>
     </div>
   </div>
 </div>
