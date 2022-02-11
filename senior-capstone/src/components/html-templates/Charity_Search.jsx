@@ -7,7 +7,7 @@ export default class Charity_Search extends Component {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
 
   <div className="columns">
-    <div className="column is-half is-offset-1">
+    <div className="column is-half is-offset-one-quarter">
       <div className="field is-horizontal">
       </div>
       <div className="field is-horizontal">
@@ -28,7 +28,7 @@ export default class Charity_Search extends Component {
         </div>
       </form>
       <div className="columns">
-        <div className="column is-half is-offset-1">
+        <div className="column is-half is-offset-one-quarter">
         </div>
       </div>
       <div className="field is-horizontal" />
