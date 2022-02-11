@@ -3,7 +3,7 @@ import './App.css';
 import ReactDOM from "react-dom";
 
 
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, withRouter } from 'react-router-dom';
 import Navbar from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Navbar.jsx'
 import Footer from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Footer.jsx'
 import Homepage from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Homepage.jsx'
@@ -24,13 +24,13 @@ class App extends Component {
     <div>
     <Router>
       <Navbar />
-      <Header />
-
+      {window.location.pathname !=='/' ? <Header/>:null}
         <Routes>
-        
+          <Route exact path='/' element={<Homepage/>}  />
           <Route exact path='/charity_request' element={<Charity_Request/>}  />
           <Route exact path='/view_donors' element={<View_Donors/>}  />
           <Route exact path='/charity_search' element={<Charity_Search/>}  />
+          <Route exact path='/donor_donation' element={<Donor_Donation/>}  />
           <Route exact path='/create_donor_acc' element={<Create_Donor_Acc/>}  />
           <Route exact path='/create_charity_acc' element={<Create_Charity_Acc/>}  />
           <Route exact path='/error' element={<Error/>}  />
