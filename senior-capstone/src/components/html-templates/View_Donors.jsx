@@ -6,11 +6,12 @@ export default class View_Donors extends Component {
 <div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
   <div className="columns">
-    <div className="column is-half is-offset-1">
+    <div className="column is-half is-offset-one-quarter">
       <div className="field is-horizontal">
       </div>
       <div className="field is-horizontal">
       </div>
+      
       <div className="center">
         <h2 className="title is-3">View Matched Donors</h2></div>
       <div className="field is-horizontal" />
@@ -38,6 +39,7 @@ export default class View_Donors extends Component {
           </div> 
         </div>
       </form>
+      <div className="field is-horizontal"> {/* for spacing */}</div>
     </div></div></div>
     );
   }
