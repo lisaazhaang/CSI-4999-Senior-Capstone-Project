@@ -7,7 +7,7 @@ export default class Create_Donor_Acc extends Component {
 <div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
   <div className="columns">
-    <div className="column is-half is-offset-1">
+    <div className="column is-half is-offset-one-quarter">
       <div className="field is-horizontal">
       </div>
       <div className="field is-horizontal">
@@ -17,7 +17,7 @@ export default class Create_Donor_Acc extends Component {
     </div>
   </div>
   <div className="columns">
-    <div className="column is-three-fifths is-offset-1">
+    <div className="column is-half is-offset-one-quarter">
       <div className="field is-horizontal">
       </div>
       <div className="field is-horizontal">
@@ -34,20 +34,21 @@ export default class Create_Donor_Acc extends Component {
           </div>
         </div>
       </div>
+      <div className="field is-horizontal"> {/* for spacing */}
+      </div>
       <div className="field is-horizontal is-grouped">
         <div className="field-label">
           <label className="label">Address:</label>
         </div>
         <div className="field-body">
           <div className="field has-addons">
-            <p className="control">
-              <input className="input" type="text" placeholder="Address #" />
-            </p>  
             <p className="control is-expanded">
-              <input className="input" type="text" placeholder="Address Street Name" />
+              <input className="input" type="text" placeholder="Address Number + Street Name" />
             </p>
           </div>
         </div>
+      </div>
+      <div className="field is-horizontal"> {/* for spacing */}
       </div>
       <div className="field is-horizontal is-grouped">
         <div className="field-label" />
@@ -62,6 +63,8 @@ export default class Create_Donor_Acc extends Component {
           </div>
         </div>
       </div>
+      <div className="field is-horizontal"> {/* for spacing */}
+      </div>
       <div className="field is-horizontal is-grouped">
         <div className="field-label" />
         <div className="field-body">
@@ -75,6 +78,8 @@ export default class Create_Donor_Acc extends Component {
           </div>
         </div>
       </div>
+      <div className="field is-horizontal"> {/* for spacing */}
+      </div>
       <div className="field is-horizontal is-grouped">
         <div className="field-label">
           <label className="label">Link to Site:</label>
@@ -86,6 +91,8 @@ export default class Create_Donor_Acc extends Component {
             </p>  
           </div>
         </div>
+      </div>
+      <div className="field is-horizontal"> {/* for spacing */}
       </div>
       <div className="field is-horizontal is-grouped">
         <div className="field-label">
@@ -100,6 +107,8 @@ export default class Create_Donor_Acc extends Component {
           <p className="help">Do not include spaces or hyphens</p>
         </div>
       </div>
+      <div className="field is-horizontal"> {/* for spacing */}
+      </div>
       <div className="field is-horizontal is-grouped">
         <div className="field-label">
           <label className="label">Email:</label>
@@ -111,6 +120,8 @@ export default class Create_Donor_Acc extends Component {
             </p>  
           </div>
         </div>
+      </div>
+      <div className="field is-horizontal"> {/* for spacing */}
       </div>
       <div className="field is-horizontal">
         <div className="field-label">
@@ -126,9 +137,9 @@ export default class Create_Donor_Acc extends Component {
       </div>  
       <div className="field is-horizontal">
       </div>
+      <div className="column is-half is-offset-one-quarter">
       <div className="field is-horizontal">
-      </div>
-      <div className="field is-grouped is-grouped-centered">
+      <div className="field is-grouped">
         <p className="control">
           <a className="button">
             Create Account
@@ -140,7 +151,11 @@ export default class Create_Donor_Acc extends Component {
           </a>
         </p>
       </div>
+      <div className="field is-horizontal"> {/* for spacing */}
+      </div>
     </div> 
+    </div>
+    </div>
   </div>
 </div>
 );
