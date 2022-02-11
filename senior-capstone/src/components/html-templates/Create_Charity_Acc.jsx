@@ -7,7 +7,7 @@ export default class Create_Charity_Acc extends Component {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
   
   <div className="columns">
-    <div className="column is-half is-offset-1">
+    <div className="column is-half is-offset-one-quarter">
       <div className="field is-horizontal">
       </div>
       <div className="field is-horizontal">
@@ -17,7 +17,7 @@ export default class Create_Charity_Acc extends Component {
     </div>
   </div>
   <div className="columns">
-    <div className="column is-three-fifths is-offset-1">
+    <div className="column is-half is-offset-one-quarter">
       <div className="field is-horizontal">
       </div>
       <div className="field is-horizontal is-grouped">
@@ -38,12 +38,9 @@ export default class Create_Charity_Acc extends Component {
         </div>
         <div className="field-body">
           <div className="field has-addons">
-            <p className="control">
-              <input className="input" type="text" placeholder="Address #" />
-            </p>  
             <p className="control is-expanded">
-              <input className="input" type="text" placeholder="Address Street Name" />
-            </p>
+              <input className="input" type="text" placeholder="Address Number + Street Name" />
+            </p>  
           </div>
         </div>
       </div>
@@ -124,18 +121,28 @@ export default class Create_Charity_Acc extends Component {
       </div>  
       <div className="field is-horizontal">
       </div>
+      </div>
+</div>
+  <div className="columns">
+    <div className="column is-half is-offset-one-quarter">
       <div className="field">
         <label className="label">How many volunteers does your charity have on a weekly basis?</label>
-        <div className="control">
+        <div className="control is-expanded">
           <input className="input" type="text" placeholder="#" />
         </div>
       </div>
+    </div>
+  </div>
+  <div className="columns">
+    <div className="column is-half is-offset-one-quarter">
       <div className="field">
         <label className="label">How many people does your charity feed on a weekly basis?</label>
-        <div className="control">
+        <div className="control is-expanded">
           <input className="input" type="text" placeholder="#" />
         </div>
       </div>
+    </div>
+  </div>
       <div className="field is-horizontal">
       </div>
       <div className="field is-grouped is-grouped-centered">
@@ -150,9 +157,12 @@ export default class Create_Charity_Acc extends Component {
           </a>
         </p>
       </div>
+      <div className="field is-horizontal"> {/* for spacing */}
+      </div>
+      <div className="field is-horizontal"> {/* for spacing */}
+      </div>
     </div> 
-  </div>
-</div>
+  
 );
 }
 }
