@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import ReactDOM from "react-dom";
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Navbar from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Navbar.jsx'
 import Footer from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Footer.jsx'
 import Homepage from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/Homepage.jsx'
@@ -16,13 +18,16 @@ import Login from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-caps
 import View_Donors from '/Users/apollosno/CSI-4999-Senior-Capstone-Project/senior-capstone/src/components/html-templates/View_Donors.jsx'
 
 
-function App() {
-  return (
+class App extends Component {
+    render(){  
+    return(
+    <div>
     <Router>
       <Navbar />
       <Header />
+
         <Routes>
-          <Route exact path='/' element={<Homepage/>}  />
+        
           <Route exact path='/charity_request' element={<Charity_Request/>}  />
           <Route exact path='/view_donors' element={<View_Donors/>}  />
           <Route exact path='/charity_search' element={<Charity_Search/>}  />
@@ -33,10 +38,9 @@ function App() {
         </Routes>
         <Footer />
     </Router>
+    </div>
     
-					
-  );
+        );
+    }
 }
-
 export default App;
-
