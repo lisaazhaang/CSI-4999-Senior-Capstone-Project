@@ -8,10 +8,10 @@ export default class Footer extends Component {
         <footer className="footer">
           <nav className="breadcrumb is-centered has-bullet-separator">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Add Charity</a></li>
-              <li><a href="#">Volunteer</a></li>
-              <li><a href="#">Donate</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/charity_request">Add Charity</a></li>
+              <li><a href="charity_search">Volunteer</a></li>
+              <li><a href="donor_donation">Donate</a></li>
             </ul>
           </nav>
           <div className="content has-text-centered">
